@@ -1,0 +1,69 @@
+.avatar {
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    overflow: hidden;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    flex-shrink: 0;
+}
+
+.image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.fallback {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-weight: 600;
+    font-size: 1rem;
+}
+
+.hidden {
+    display: none !important;
+}
+
+.status {
+    position: absolute;
+    bottom: 2%;
+    right: 2%;
+    width: 20%;
+    height: 20%;
+    min-width: 8px;
+    min-height: 8px;
+    border-radius: 50%;
+    border: 2px solid white;
+}
+
+/* Size variants */
+.small {
+    width: 32px;
+    height: 32px;
+}
+.small .fallback { font-size: 0.7rem; }
+.small .status { width: 7px; height: 7px; min-width: 7px; min-height: 7px; }
+
+.medium {
+    width: 48px;
+    height: 48px;
+}
+.medium .fallback { font-size: 1rem; }
+
+.large {
+    width: 64px;
+    height: 64px;
+}
+.large .fallback { font-size: 1.25rem; }
+
+.xlarge {
+    width: 96px;
+    height: 96px;
+}
+.xlarge .fallback { font-size: 1.75rem; }
